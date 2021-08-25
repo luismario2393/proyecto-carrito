@@ -2,11 +2,12 @@
 :root {
   --white: #fff;
   --gray: #d1d7dc;
-  --purple: #5624d0;
+  --purple: #591882;
   --lightPurple: #a529f1;
   --dark: #1c1d1f;
   --star: #e59819;
   --number: #b4690e;
+  --dark-gray: #6a6f73;
   --mainFont: 'STIX Two Text', serif;
 
   --fuente-principal: 'Roboto', sans-serif;
@@ -30,6 +31,9 @@ p {
   max-width: 120rem;
   width: 100%;
   margin: 0 auto;
+}
+.bold {
+  font-weight: bold;
 }
 a {
   text-decoration: none;
@@ -103,9 +107,12 @@ h3 {
   justify-content: space-between;
   width: 10rem;
 }
-.nav-icon svg {
+.nav-icon a svg {
   width: 2.5rem;
   height: 2.5rem;
+}
+.nav-icon a svg:hover {
+  fill: var(--lightPurple);
 }
 .nav-perfil {
   background-color: var(--dark);
@@ -133,4 +140,218 @@ h3 {
   align-items: center;
   justify-content: space-between;
   height: 48px;
+}
+
+.section {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 20rem;
+}
+.section-title {
+  display: flex;
+  align-items: flex-end;
+  font-size: 3.5rem;
+}
+.section-subtitle {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+}
+.main-title {
+  width: 100%;
+  border-bottom: 1px solid var(--gray);
+}
+.main-title h2 {
+  width: 16rem;
+  font-size: 1.8rem;
+  padding: 2rem;
+}
+.main-title h2:hover {
+  border-bottom: 2px solid var(--dark);
+  cursor: pointer;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.main-card {
+  width: 25rem;
+}
+
+.main-img1 {
+  background-image: url('../img/Java.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25rem;
+  height: 15rem;
+}
+.main-img2 {
+  background-image: url('../img/angular4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25rem;
+  height: 15rem;
+}
+.main-img3 {
+  background-image: url('../img/image-course-javascript.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25rem;
+  height: 15rem;
+}
+.main-img4 {
+  background-image: url('../img/Python-language-1-.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25rem;
+  height: 15rem;
+}
+.main-card h3 {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+.main-card__p1 {
+  color: var(--dark-gray);
+  font-size: 1.3rem;
+}
+.main-card__p2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.main-card__p2 span {
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-decoration: line-through;
+  color: var(--dark-gray);
+}
+.main-B {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+.main-button {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.button {
+  background-color: var(--lightPurple);
+  color: var(--white);
+  border: none;
+  font-weight: bold;
+  padding: 1rem 2rem;
+}
+.button:hover {
+  background-color: var(--purple);
+  color: var(--white);
+  border: none;
+  font-weight: bold;
+  padding: 1rem 2rem;
+}
+.main-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-button a svg {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid var(--dark);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.main-button a svg:hover {
+  fill: var(--gray);
+}
+
+.section-two {
+  height: 8.5rem;
+  background-color: var(--dark);
+  border-bottom: 1px solid var(--dark-gray);
+}
+.section-two__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.section-two__text {
+  color: var(--white);
+}
+.section-two__text h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+.section-two__text p {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+.section-two__button {
+  background-color: var(--dark);
+  font-weight: bold;
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 2rem;
+}
+.section-two__button:hover {
+  background-color: #3a3737;
+  cursor: pointer;
+}
+.udemy-business {
+  color: var(--dark-gray);
+  font-weight: bold;
+}
+.udemy-business:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.section-two__container2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100%;
+}
+.section-two__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-two__icons svg{
+  width: 6rem;
+  height: 6rem;
+  fill: var(--gray);
+}
+.section-two__text2 {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+.section-two__text2 h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+footer {
+  background-color: var(--dark);
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-title__footer p{
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--white);
+}
+.text-footer {
+  font-size: 1.2rem;
+  color: var(--white);
 }
