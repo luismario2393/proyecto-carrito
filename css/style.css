@@ -63,8 +63,14 @@ h3 {
   padding: 0 2rem;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 7.2rem;
   border-bottom: 1px solid var(--gray);
+}
+@media (max-width: 500px) { 
+  .nav {
+    height: 25rem;
+    flex-wrap: wrap;
+  }
 }
 
 .nav-title p {
@@ -74,6 +80,11 @@ h3 {
 
 .nav-elements {
   font-size: 1.3rem;
+}
+@media (max-width: 860px) { 
+  .nav-elements {
+    display: none;
+  }
 }
 .nav-elements:hover {
   color: var(--lightPurple);
@@ -133,6 +144,8 @@ h3 {
   height: 48px;
   box-shadow: 10px 5px 5px var(--gray);
 }
+
+
 .nav-two__div {
   display: flex;
   gap: 2rem;
@@ -176,6 +189,14 @@ h3 {
   gap: 2rem;
   margin-top: 2rem;
 }
+@media (max-width: 1080px) { 
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .main-card {
   width: 25rem;
 }
@@ -278,11 +299,22 @@ h3 {
   background-color: var(--dark);
   border-bottom: 1px solid var(--dark-gray);
 }
+@media (max-width: 760px ) { 
+  .section-two {
+    height: 15rem;
+  }
+}
+
 .section-two__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
+}
+@media (max-width: 760px ) { 
+  .section-two__container {
+    display: block;
+  }
 }
 .section-two__text {
   color: var(--white);
@@ -319,6 +351,12 @@ h3 {
   grid-template-columns: 2fr 1fr;
   height: 100%;
 }
+@media (max-width: 760px) { 
+  .section-two__container2 {
+    display: block;
+  }
+}
+
 .section-two__icons {
   display: flex;
   justify-content: center;
