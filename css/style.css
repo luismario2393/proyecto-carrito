@@ -1,0 +1,136 @@
+/*  Globales */
+:root {
+  --white: #fff;
+  --gray: #d1d7dc;
+  --purple: #5624d0;
+  --lightPurple: #a529f1;
+  --dark: #1c1d1f;
+  --star: #e59819;
+  --number: #b4690e;
+  --mainFont: 'STIX Two Text', serif;
+
+  --fuente-principal: 'Roboto', sans-serif;
+
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 1.6rem;
+  font-family: var(--fuente-principal);
+}
+p {
+  font-size: 2rem;
+}
+.container {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3 {
+  margin: 0;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 3rem;
+}
+/* Header */
+
+/* primera navegacion */
+.nav {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.nav-title p {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.nav-elements {
+  font-size: 1.3rem;
+}
+.nav-elements:hover {
+  color: var(--lightPurple);
+}
+
+.nav-input {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  border: 1px solid var(--dark);
+  border-radius: 2.5rem;
+  width: 40rem;
+  height: 5rem;
+}
+.nav-input__svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-input__svg svg {
+  width: 2rem;
+  height: 2rem;
+}
+.nav-input__input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+}
+.nav-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 10rem;
+}
+.nav-icon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.nav-perfil {
+  background-color: var(--dark);
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 0.7rem;
+}
+
+/*segunda navegacion*/
+.nav-two {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  box-shadow: 10px 5px 5px var(--gray);
+}
+.nav-two__div {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+}
