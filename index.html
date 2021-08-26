@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Univermy</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -38,19 +38,38 @@
           <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
         </svg></a>
   
-        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-          <circle cx="6" cy="19" r="2" />
-          <circle cx="17" cy="19" r="2" />
-          <path d="M17 17h-11v-14h-2" />
-          <path d="M6 5l14 1l-1 7h-13" />
-        </svg></a>
+        <ul>
+          <li class="nav-icon__submenu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="6" cy="19" r="2" />
+            <circle cx="17" cy="19" r="2" />
+            <path d="M17 17h-11v-14h-2" />
+            <path d="M6 5l14 1l-1 7h-13" />
+            </svg>
+            <div id="carrito">
+                                    
+              <table id="lista-carrito" class="u-full-width">
+                  <thead>
+                      <tr class="tabla">
+                          <th>Imagen</th>
+                          <th>Nombre</th>
+                          <th>Precio</th>
+                          <th>Cantidad</th>
+                          <th></th>
+                      </tr>
+                  </thead>
+                  <tbody></tbody>
+              </table>
+              <a href="#" id="vaciar-carrito" class="button vaciar">Vaciar Carrito</a>
+             </div>
+
+          </li>
+        </ul>
+
+        
   
-        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-          <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
-          <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
-        </svg></a>
+        
       </div>
 
       <div class="nav-perfil">LA</div>
@@ -85,16 +104,16 @@
       <h2>Más populares</h2>
     </div>
     
-    <div class="main-container">
+    <div id="cursos" class="main-container">
       <article class="main-card">
-        <div class="main-img1">
-          <!-- <img src="./img/Java.png" alt="curso java"> -->
+        <div class="main-img">
+          <img src="./img/Java.png" alt="curso java">
         </div> 
         <h3>Universidad Java 2021 - De cero a Experto! + 100 hrs</h3>
         <p class="main-card__p1">Global GeoMentoring Ing. Manuel Tapia</p>
-        <p class="main-card__p2">13,99 US$ <span>19,99 US$</span></p>
+        <p class="main-card__p2"><span class="promo">13,99 US$ </span><span class="precio-antiguo">19,99 US$</span></p>
           <div class="main-button">
-            <button class="button">Añadir a la cesta</button>
+            <button data-id="1" class="button ponlo">Añadir a la cesta</button>
             <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
@@ -104,15 +123,14 @@
       </article>
 
       <article class="main-card"> 
-        <div class="main-img2">
-
-          <!-- <img src="./img/angular4.png" alt="curso angular"> -->
+        <div class="main-img">
+          <img src="./img/angular4.png" alt="curso angular"> 
         </div>
         <h3>Angular de cero a experto (Legacy)</h3>
         <p class="main-card__p1">Alexander Arroyo</p>
-        <p class="main-card__p2">13,99 US$ <span>89,99 US$</span></p>
+        <p class="main-card__p2"><span class="promo">13,99 US$ </span><span class="precio-antiguo">89,99 US$</span></p>
         <div class="main-button">
-          <button class="button">Añadir a la cesta</button>
+          <button data-id="2" class="button ponlo">Añadir a la cesta</button>
           <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
@@ -121,15 +139,14 @@
       </article>
 
       <article class="main-card"> 
-        <div class="main-img3">
-
-          <!-- <img src="./img/image-course-javascript.png" alt="curso JS"> -->
+        <div class="main-img">
+          <img src="./img/image-course-javascript.png" alt="curso JS">
         </div>
         <h3>Master en JavaScript: Aprende JS, jQuery, Angular, NodeJS</h3>
         <p class="main-card__p1">Oscar Solano</p>
-        <p class="main-card__p2">13,99 US$ <span>89,99 US$</span></p>
+        <p class="main-card__p2"><span class="promo">13,99 US$ </span><span class="precio-antiguo">89,99 US$</span></p>
         <div class="main-button">
-          <button class="button">Añadir a la cesta</button>
+          <button data-id="3" class="button ponlo">Añadir a la cesta</button>
           <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
@@ -138,15 +155,14 @@
       </article>
 
       <article class="main-card"> 
-        <div class="main-img4">
-
-          <!-- <img src="./img/Python-language-1-.png" alt="curso python"> -->
+        <div class="main-img">
+          <img src="./img/Python-language-1-.png" alt="curso python">
         </div>
         <h3>Curso Maestro de Python3: Aprende Desde Cero</h3>
         <p class="main-card__p1">Edwin Licona</p>
-        <p class="main-card__p2">13,99 US$ <span>89,99 US$</span></p>
+        <p class="main-card__p2"><span class="promo">13,99 US$ </span><span class="precio-antiguo">89,99 US$</span></p>
         <div class="main-button">
-          <button class="button">Añadir a la cesta</button>
+          <button data-id="4" class="button ponlo">Añadir a la cesta</button>
           <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
@@ -212,6 +228,6 @@
     </div>
   </footer>
 
-  
+  <script src="./js/index.js"></script>
 </body>
 </html>

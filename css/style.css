@@ -114,9 +114,16 @@ h3 {
   font-size: 1.3rem;
 }
 .nav-icon {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 10rem;
+}
+.nav-icon ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .nav-icon a svg {
   width: 2.5rem;
@@ -124,6 +131,41 @@ h3 {
 }
 .nav-icon a svg:hover {
   fill: var(--lightPurple);
+}
+.nav-icon__submenu svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.nav-icon__submenu svg:hover {
+  fill: var(--lightPurple);
+}
+.nav-icon__submenu {
+  list-style: none;
+  position: relative;
+}
+.nav-icon__submenu #carrito{
+  display: none;
+}
+.tabla {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.vaciar {
+  display: flex;
+  
+}
+.nav-icon__submenu:hover #carrito{
+  display: block;
+  position: absolute;
+  right:0;
+
+  top:100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
 }
 .nav-perfil {
   background-color: var(--dark);
@@ -201,35 +243,12 @@ h3 {
   width: 25rem;
 }
 
-.main-img1 {
-  background-image: url('../img/Java.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+
+.main-img {
   width: 25rem;
   height: 15rem;
 }
-.main-img2 {
-  background-image: url('../img/angular4.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 25rem;
-  height: 15rem;
-}
-.main-img3 {
-  background-image: url('../img/image-course-javascript.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 25rem;
-  height: 15rem;
-}
-.main-img4 {
-  background-image: url('../img/Python-language-1-.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.main-img img {
   width: 25rem;
   height: 15rem;
 }
@@ -245,7 +264,7 @@ h3 {
   font-size: 1.6rem;
   font-weight: bold;
 }
-.main-card__p2 span {
+.precio-antiguo {
   font-weight: 400;
   font-size: 1.4rem;
   text-decoration: line-through;
@@ -276,6 +295,7 @@ h3 {
   border: none;
   font-weight: bold;
   padding: 1rem 2rem;
+  cursor: pointer;
 }
 .main-button a {
   display: flex;
@@ -392,4 +412,22 @@ footer div {
 .text-footer {
   font-size: 1.2rem;
   color: var(--white);
+}
+tr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 0.5fr;
+  font-size: 1.2rem;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.borrar {
+  background-color: red;
+  border-radius: 50%;
+  padding: 1rem;
+  font-weight: bold;
+  color: var(--white);
+}
+.borrar:hover {
+  background-color: #e26060;
 }
