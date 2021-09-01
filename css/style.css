@@ -70,7 +70,14 @@ h3 {
   .nav {
     height: 25rem;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
   }
+  .nav-title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
 }
 
 .nav-title p {
@@ -151,6 +158,7 @@ h3 {
   gap: 2rem;
   margin-bottom: 2rem;
 }
+
 .vaciar {
   display: flex;
   
@@ -421,6 +429,8 @@ tr {
   margin-bottom: 1rem;
   text-align: center;
 }
+
+
 .borrar {
   background-color: red;
   border-radius: 50%;
